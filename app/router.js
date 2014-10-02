@@ -6,7 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('settings');
+  this.resource('settings', function() {
+      this.route('info');
+      this.route('profile');
+  });
+
   this.route('segmented');
 });
 

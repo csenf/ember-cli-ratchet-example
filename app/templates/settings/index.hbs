@@ -5,20 +5,21 @@
 
     <ul class="table-view">
         <li class="table-view-cell media">
-            <a class="navigate-right">
-                <span class="media-object pull-left icon icon-trash"></span>
-                <div class="media-body">
-                    Item 1
-                </div>
-            </a>
+            {{#link-to 'settings.info' class="navigate-right"}}
+            Info
+            {{/link-to}}
         </li>
         <li class="table-view-cell media">
-            <a class="navigate-right">
-                <span class="media-object pull-left icon icon-gear"></span>
-                <div class="media-body">
-                    Item 2
-                </div>
-            </a>
+            {{#link-to 'settings.profile' class="navigate-right"}}
+            Profile
+            {{/link-to}}
+        </li>
+        <li class="table-view-divider">&nbsp;</li>
+        <li class="table-view-cell">
+            Item 2
+            <div class="toggle active">
+                <div class="toggle-handle"></div>
+            </div>
         </li>
         <li class="table-view-cell media">
             <a class="navigate-right">
@@ -78,3 +79,7 @@
         </li>
     </ul>
 </div>
+
+{{nav-bar}}
+
+
